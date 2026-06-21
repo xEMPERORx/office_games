@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  background: #1e1e1e;
+  color: #d4d4d4;
+  font-family: 'Consolas', 'Courier New', monospace;
+}
+
+/* Mobile: hide IDE chrome */
+@media (max-width: 640px) {
+  .ide-sidebar { display: none !important; }
+  .ide-titlebar { display: none !important; }
+  .ide-statusbar { display: none !important; }
+  .ide-tabs { display: none !important; }
+}
